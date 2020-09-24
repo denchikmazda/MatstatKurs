@@ -12,8 +12,8 @@ sample = [float(value) for value in sample]
 
 data = pandas.read_csv('/Users/Ефимов Данила/Desktop/курсач матстат/r1z1.csv')
 
-#print(data.shape)
-#for value in sample:
-#    print(value)
-#print(data['X'].value_counts())
-#plt.show()
+print(data.shape)
+for value in sample:
+    print(value)
+print(data['X'].value_counts())
+plt.show()
