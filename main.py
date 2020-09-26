@@ -39,6 +39,18 @@ else:
     mediana=(sample[(size-1)//2+1]+sample[(size-1)//2+2])/2
 print("Медиана: "+str(mediana))
 
+interquartile_range_down=interquartile_range_up=0
+if ((size-1)*0.25)%2 == 0:
+    interquartile_range_down = sample[(size-1)*0.25+1]
+else:
+    interquartile_range_down = (sample[int((size-1)*0.25)+1]+sample[int((size-1)*0.25+2)])/2
+if ((size-1)*0.75)%2 == 0:
+    interquartile_range_up = sample[(size-1)*0.75+1]
+else:
+    interquartile_range_up = (sample[int((size-1)*0.75)+1] + sample[int((size-1)*0.75)+2])/2
+print("Интерквартильная широта: "+str(interquartile_range_up-interquartile_range_down))
+
+
 
 
 
