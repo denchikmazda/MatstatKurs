@@ -1,4 +1,5 @@
 from Kursov import sample, data
+
 size=data['X'].count()
 print("Sample size: "+str(size))
 
@@ -37,6 +38,7 @@ if (size-1)%2==0:
 else:
     mediana=(sample[(size-1)//2+1]+sample[(size-1)//2+2])/2
 print("Медиана: "+str(mediana))
+
 
 
 

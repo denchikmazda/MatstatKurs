@@ -15,5 +15,5 @@ data = pandas.read_csv('/Users/Ефимов Данила/Desktop/курсач м
 print(data.shape)
 for value in sample:
     print(value)
-print(data['X'].value_counts())
-plt.show()
+#print(data['X'].value_counts())
+#plt.show()
